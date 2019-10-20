@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Registration form</title>
+	<script type="text/javascript">
+		function validate()
+		{
+			var Username=document.getElementById("Username");
+			var Password=document.getElementById("Password");
+			if(Username.value.trim()=="" || Password.value.trim()=="")
+			{
+				alert("NO BLANK SPACES ARE ALLOWED");
+				return false;
+			}
+			else
+			{
+				true;
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+	
+	</section>
+	 <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form onsubmit="return validate()" action="thankyou.html">
+            <p>Username</p>
+            <input id="Username" type="text" name="" placeholder="Enter Username" >
+            <p>Password</p>
+            <input id="Password" type="password" name="" placeholder="Enter Password" >
+            <p>Contact no</p>
+            <input type="number" name="" placeholder="Enter your Contact No">
+            <input type="submit" name="" value="Login">
+            <a href="https://www.youtube.com/watch?v=M23TPlVSxgw">Lost your password?</a><br>
+            <a href="https://www.youtube.com/watch?v=o3Qpmx-ngio">Don't have an account?</a>
+        </form>
+        
+    </div>
+</body>
+</html>
